@@ -1,0 +1,17 @@
+#FIBONACCI SERIES WITH LOOPS
+
+N = int(input("Number of elements:"))
+
+ele_1=0                                         
+ele_2=1
+
+if N<=0:
+    print(ele_1)
+    
+else:
+    print(ele_1,ele_2,end=' ')
+    for x in range(2,N):
+        next=ele_1+ele_2                           
+        print(next,end=' ')
+        ele_1=ele_2
+        ele_2=next
